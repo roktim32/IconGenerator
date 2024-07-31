@@ -1,13 +1,23 @@
 "use client";
 
-import BackgroundController from "@/components/BackgroundController";
+// import BackgroundController from "@/components/BackgroundController";
 import Header from "@/components/Header";
-import IconController from "@/components/IconController";
-import LogoPreview from "@/components/LogoPreview";
+// import LogoPreview from "@/components/LogoPreview";
 import SideNav from "@/components/SideNav";
-import { Button } from "@/components/ui/button";
 import { UpdateStorageContext } from "@/context/UpdateStorageContext";
+import dynamic from "next/dynamic";
 import { useState } from "react";
+// Dynamically import components that might use browser-specific APIs
+const IconController = dynamic(() => import("@/components/IconController"), {
+  ssr: false,
+});
+const BackgroundController = dynamic(
+  () => import("@/components/BackgroundController"),
+  { ssr: false }
+);
+const LogoPreview = dynamic(() => import("@/components/LogoPreview"), {
+  ssr: false,
+});
 
 export default function Home() {
   const [selectedIndex, setSelectedIndex] = useState(0);
