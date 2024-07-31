@@ -50,7 +50,7 @@ const IconController = () => {
                 </div>
                 <div className='py-2'>
                     <label className='py-2 flex justify-between items-center'>Icon Color</label>
-                    <ColorPickerController hideController={true} selectedColor={(color) => setColor(color)} />
+                    <ColorPickerController selectedColor={(color) => setColor(color)} />
                 </div>
             </div>
 

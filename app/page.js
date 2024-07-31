@@ -12,11 +12,11 @@ import { useState } from "react";
 export default function Home() {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [updateStorage, setUpdateStorage] = useState({});
-
+  const [downloadIcon, setDownloadIcon] = useState();
   return (
     <UpdateStorageContext.Provider value={{ updateStorage, setUpdateStorage }}>
       <div className="flex flex-col h-screen">
-        <Header />
+        <Header DownloadIcon={setDownloadIcon} />
         <div className="flex flex-1 overflow-hidden">
           <div className="w-64 ">
             <SideNav selectedIndex={(value) => setSelectedIndex(value)} />
@@ -30,7 +30,7 @@ export default function Home() {
               )}
             </div>
             <div className="md:col-span-3  overflow-y-auto">
-              <LogoPreview />
+              <LogoPreview downloadIcon={downloadIcon} />
             </div>
             <div className="bg-blue-500 overflow-y-auto">Personal</div>
           </div>
