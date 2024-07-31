@@ -42,7 +42,7 @@ export default function Home() {
             <div className="md:col-span-3  overflow-y-auto">
               <LogoPreview downloadIcon={downloadIcon} />
             </div>
-            <div className="bg-blue-500 overflow-y-auto">Personal</div>
+            {/* <div className="bg-blue-500 overflow-y-auto">Personal</div> */}
           </div>
         </div>
       </div>
