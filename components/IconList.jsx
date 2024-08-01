@@ -48,7 +48,7 @@ const IconList = ({ selectedIcon }) => {
 
                 <DialogContent>
                     <DialogHeader>
-                        <DialogTitle>Pick your favourite Icon</DialogTitle>
+                        <DialogTitle>Pick your Favourite Icon</DialogTitle>
                         <DialogDescription>
                             <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 overflow-auto h-[400px] p-6'>
                                 {iconList.map((icon, index) => (
