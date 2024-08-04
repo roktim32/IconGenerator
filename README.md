@@ -21,7 +21,7 @@ Logomaker is a web application built with Next.js that allows users to create an
 ## Usage
 
 1. Select an icon from the available options.
-2. Customize the icon's size, color, and rotation.
+2. Customize the icon's size, color, border-radius and rotation.
 3. Adjust the background settings.
 4. Use the color picker to fine-tune the colors of various elements.
 5. Preview your logo in real-time.
