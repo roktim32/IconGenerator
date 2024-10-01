@@ -29,7 +29,7 @@ Logomaker is a web application built with Next.js that allows users to create an
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! Please feel free to submit a Pull Request!
 
 ## License
 
